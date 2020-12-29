@@ -33,12 +33,12 @@ require 'navbar.php';
           </form>
         </div>
         <div class="col-md-2 main">
-          <form action="registroCategoria.php"" method="POST">
+          <form action="../functions/registroCategoria.php"" method="POST">
             <div class="form-group">
             <label for="new_categorie">Agregar Nueva Categoria</label>
               <input type="text" class="form-control" id="new_categorie" placeholder="Nueva categoria" name="categoria">
             </div>
-            <button type="button" id="submit_categorie" class="btn btn-default btn-block">Guardar</button>
+            <button type='submit' id="submit_categorie" class="btn btn-default btn-block">Guardar</button>
           </form>
         </div>
       </div>

@@ -1,16 +1,13 @@
 <?php
-    $servidor="localhost";
-    $usuarioBD="root";
-    $pwdBD="";
-    $nomBD="blogbd";
-    
+    include "../config/conexion.php";
+
     $conexion = mysqli_connect($servidor,$usuarioBD,$pwdBD,$nomBD);
     $categoria=$_POST['categoria'];
-    $sql = "INSERT INTO Categoria (categoria) VALUES ('$categoria')";
+    $sql = "INSERT INTO categoria (categoria) VALUES ('$categoria')";
     $result = mysqli_query($conexion, $sql);
     if ($result==false) {
         echo "Error en el registro";
     } else {
-        header("location:dashboard.php");
+        header("location:../dashboard/dashboard.php");
     }
 ?>
