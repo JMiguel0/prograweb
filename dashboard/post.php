@@ -19,6 +19,17 @@ require 'navbar.php';
             <label for="categorie">Categoría</label>
             <select name="categorie_id" class="form-control" id="Categoría">
               <option value="0">Elige una categoría</option>
+              <?php
+                include "../config/conexion.php";
+                $conexion = mysqli_connect($servidor,$usuarioBD,$pwdBD,$nomBD);
+                $sql = "SELECT categoria_id, categoria FROM categoria";
+                $result = mysqli_query($conexion, $sql);
+                while ($row = mysqli_fetch_array($result)) {
+              ?>
+                <option value="<?php echo $row['categoria_id']; ?>"><?php echo $row['categoria'];?></option>
+              <?php
+                }
+              ?> 
             </select>
             <br>
             <label for="content">Contenido</label>
@@ -33,12 +44,12 @@ require 'navbar.php';
           </form>
         </div>
         <div class="col-md-2 main">
-          <form action="../functions/registroCategoria.php"" method="POST">
+          <form action="../functions/registroCategoria.php" method="POST">
             <div class="form-group">
             <label for="new_categorie">Agregar Nueva Categoria</label>
               <input type="text" class="form-control" id="new_categorie" placeholder="Nueva categoria" name="categoria">
             </div>
-            <button type='submit' id="submit_categorie" class="btn btn-default btn-block">Guardar</button>
+            <button href="../functions/registroCategoria.php" type='submit' id="submit_categorie" class="btn btn-default btn-block">Guardar</button>
           </form>
         </div>
       </div>

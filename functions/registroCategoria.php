@@ -8,6 +8,8 @@
     if ($result==false) {
         echo "Error en el registro";
     } else {
-        header("location:../dashboard/dashboard.php");
+        //header("location:../dashboard/post.php");
+        echo '<script type="text/javascript"> alert("Categoría registrada correctamente");
+        window.location="../dashboard/post.php"; </script>'; 
     }
 ?>
