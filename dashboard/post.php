@@ -11,7 +11,7 @@ require 'navbar.php';
       </div>
       <div class="row">
         <div class="col-sm-9 col-sm-offset-3 col-md-7 col-md-offset-2 main">
-          <form enctype="multipart/form-data" action="../functions/article/insert.php" method="POST">
+          <form enctype="multipart/form-data" action="../functions/registroArticulo.php" method="POST">
             <div class="form-group">
               <label for="title">Título</label>
               <input type="text" name="title" class="form-control" id="title" placeholder="Nuevo Título">
