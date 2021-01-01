@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="es">
   <head>
     <title>Title</title>
     <!-- Required meta tags -->
@@ -32,7 +32,7 @@
         <a class="blog-header-logo text-dark" href="#">Large</a>
       </div>
       <div class="col-4 d-flex justify-content-end align-items-center">
-        <a class="btn btn-sm btn-outline-secondary" href="#">Sign up</a>
+        <a class="btn btn-sm btn-outline-secondary" href="login/login.php">Sign in</a>
       </div>
     </div>
   </header>
