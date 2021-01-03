@@ -36,9 +36,8 @@ require 'navbar.php';
             <textarea  name="content" class="form-control" rows="3" id="content"></textarea>
             <div class="form-group">
             <br>
-              <label for="exampleInputFile">File input</label>
+              <label for="exampleInputFile">Cargar Imagen</label>
               <input name="user-file" type="file" id="exampleInputFile">
-              <p class="help-block">Example block-level help text here.</p>
             </div>
             <button name="submit" type="submit" class="btn btn-default">Submit</button>
           </form>
