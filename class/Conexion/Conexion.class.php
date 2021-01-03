@@ -1,7 +1,4 @@
 <?php 
-
-require '../../config/config.php';
-
 class Conexion extends Mysqli
 {
   private $host;
@@ -24,4 +21,3 @@ class Conexion extends Mysqli
     $this->set_charset(CONF_DB_CHARSET);
   }
 }
-?>

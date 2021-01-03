@@ -1,10 +1,9 @@
 <?php
-spl_autoload_register(function ($class){
-  include "../../class/Message/$class.class.php";
-});
-$message = isset($_GET['message']) && isset($_GET['type']) ? 
-MessageFactory :: createMessage($_GET['type']) : false;
-$message_out = $message ? $message->getMessage($_GET['message']) : '';
+require '../../functions/autoload_class.php';
+
+$message = isset($_GET['message']) && isset($_GET['type']) ? MessageFactory::createMessage($_GET['type']) : false;
+
+$message_out = $message ? $message->getMessage($_GET['message']) :''; 
 
 ?>
 <!DOCTYPE html>

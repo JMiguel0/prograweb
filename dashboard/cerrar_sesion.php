@@ -1,4 +1,5 @@
 <?php 
+require_once $_SERVER['DOCUMENT_ROOT'] . '/curso-blog-2' . '/config/config.php';
 spl_autoload_register(function ($class) {
   include "../class/$class/$class.class.php";
 });
@@ -11,4 +12,3 @@ if (! $session->validateSession('id')) {
 $session->destroySession();
 
 header('location: login/login.php');
-?>

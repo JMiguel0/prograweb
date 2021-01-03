@@ -1,8 +1,8 @@
-<?php
-
+<?php 
+/**
+* 
+*/
 abstract class Message
 {
-    abstract public function getMessage ($message);
+  abstract public function getMessage (string $message): string;
 }
-
-?>

@@ -6,7 +6,7 @@ require 'navbar.php';
       <div class="row">
         <?php require 'sidebar.php'; ?>
         <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
-          <h2 class="sub-header">Lista de Posts</h2>
+          <h2 class="sub-header">lista de posts</h2>
           <div class="table-responsive">
             <table class="table table-striped table-hover">
               <thead>
@@ -26,6 +26,4 @@ require 'navbar.php';
         </div>
       </div>
     </div>
-<?php 
-require 'footer.php';
-?>
+<?php require 'footer.php'; ?>
