@@ -15,7 +15,7 @@ $(document).ready(function(){
 
 function imprimir_tabla(){
   $.ajax({
-      url: '../functions/article/select.php'
+      url: '/prograweb/functions/article/select.php'
     })
     .done(function(result){
       $('#articles').html(result)
@@ -31,7 +31,7 @@ function mostrar_valores_inputs(search){
   var id_article = search_array[1]
   $.ajax({
       type: 'POST',
-      url: '../functions/article/select_by_id.php',
+      url: '/prograweb/functions/article/select_by_id.php',
       data: {'id': id_article}
     })
     .done(function(result){
